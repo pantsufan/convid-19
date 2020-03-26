@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<title>CONVID-19</title>
+<meta name="description" content="Tracking the coronavirus cases in India & Goa during the outbreak of the disease in 2020.">
+</head>
+<body>
+<div id="header" class="text-center p-3 container-fluid bg-dark text-white">
+    <h1 class="display-2"><i class="fas fa-virus"></i> <small> CONVID-19 Tracker</small></h1>
+    <small class="text-uppercase">data is gathered using convid19india.org</small><br>
+    <small class="text-uppercase">specially made for goans</small>
+</div>
+<div class="container-fluid d-flex justify-content-around">
+    <div class="w-50">
+        <br>
+      <img src="india.svg" class="img-fluid" alt="...">
+    </div>
+    <div>
+        <br>
+        <h3 class="text-danger">Details of India:</h3> <br>
+        <div>
+            <p id="total"></p><br>
+            <p id="active"></p><br>
+            <p id="discharged"></p><br>
+            <p id="dead"></p>
+        </div>
+    </div>
+</div>
+<br>
+<h6 class="text-center text-uppercase bg-dark text-white-50 p-4" id="last_refresh"></h6>
+<br>
+<div class="container-fluid">
+    <br>
+    <h4 class="display-4 text-center text-danger">Details of Goa:</h4> <br>
+    <div class="text-center">
+        <p id="goa_totalcases"></p><br>
+        <p id="goa_active"></p><br>
+        <p id="goa_recovered"></p><br>
+        <p id="goa_deaths"></p><br>
+    </div>
+</div>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container-fluid text-center">
+        <p>STAY SAFE</p>
+      <small>Made by Kninja28</small>
+    </div>
+  </footer>
+<script src="check.js"></script>
+<script src="https://kit.fontawesome.com/2633e8951d.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
