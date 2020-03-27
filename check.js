@@ -20,7 +20,8 @@ fetch (`${state_url}`)
     . then (json => {
     //console.log(json);
         document.getElementById("goa_totalcases").innerHTML="<b> Total Cases: </b>"+json.Goa.districtData['North Goa'].confirmed;
-        document.getElementById("goa_active").innerHTML="<b> Active Cases: </b>"+json.Goa.districtData['North Goa'].active;
-        document.getElementById("goa_recovered").innerHTML="<b> Discharged: </b>"+json.Goa.districtData['North Goa'].recovered;
-        document.getElementById("goa_deaths").innerHTML="<b> Deaths: </b>"+json.Goa.districtData['North Goa'].deaths;
+  // Changes made in API
+        //document.getElementById("goa_active").innerHTML="<b> Active Cases: </b>"+json.Goa.districtData['North Goa'].active;
+        //document.getElementById("goa_recovered").innerHTML="<b> Discharged: </b>"+json.Goa.districtData['North Goa'].recovered;
+        //document.getElementById("goa_deaths").innerHTML="<b> Deaths: </b>"+json.Goa.districtData['North Goa'].deaths;
     })
