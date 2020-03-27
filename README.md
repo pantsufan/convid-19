@@ -1,4 +1,4 @@
-# CONVID-19 Tracker
+# COVID-19 Tracker
 (Made Specially For Goan People)
 
 ## Thanks To:
