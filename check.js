@@ -12,16 +12,15 @@ fetch (`${base_url}`)
         document.getElementById("dead").innerHTML="<b> Deaths: </b>"+json.data.total.deaths;
     })
 
-const state_url="https://api.covid19india.org/state_district_wise.json";
+const state_url="https://covid-goa.herokuapp.com/goa-cases";
 fetch (`${state_url}`)
     . then (response => {
     return response.json();
     })
     . then (json => {
     //console.log(json);
-        document.getElementById("goa_totalcases").innerHTML="<b> Total Cases: </b>"+json.Goa.districtData['North Goa'].confirmed;
-  // Changes made in API
-        //document.getElementById("goa_active").innerHTML="<b> Active Cases: </b>"+json.Goa.districtData['North Goa'].active;
-        //document.getElementById("goa_recovered").innerHTML="<b> Discharged: </b>"+json.Goa.districtData['North Goa'].recovered;
-        //document.getElementById("goa_deaths").innerHTML="<b> Deaths: </b>"+json.Goa.districtData['North Goa'].deaths;
+        document.getElementById("goa_totalcases").innerHTML="<b> Confirmed Cases: 			</b>"+json.Data['0'].confirmed;
+        document.getElementById("goa_active").innerHTML="<b> Active Cases: </b>"+json.data['0'].active;
+        document.getElementById("goa_recovered").innerHTML="<b> Suspects: </b>"+json.data['0'].suspects;
+        document.getElementById("goa_deaths").innerHTML="<b> Deaths: </b>"+json.Goa.data['0'].deceased;
     })
