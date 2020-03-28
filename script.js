@@ -20,7 +20,7 @@ fetch (`${state_url}`)
         // To strip the hours form json uodatedAT
         var d = new Date(json.data['0'].updatedAt);
         var h =  d.getHours(), m = d.getMinutes();
-        var time = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
+        var time = (h > 12) ? (h-12 + ':' + m +' AM') : (h + ':' + m +' PM');
         // Displaying the results
         document.getElementById("goa_confirmed").innerHTML=+json.data['0'].confirmed;
         document.getElementById("goa_suspects").innerHTML=+json.data['0'].suspects;
