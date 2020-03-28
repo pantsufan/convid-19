@@ -17,9 +17,14 @@ fetch (`${state_url}`)
     return response.json();
     })
     . then (json => {
+        // To strip the hours form json uodatedAT
+        var d = new Date(json.data['0'].updatedAt);
+        var h =  d.getHours(), m = d.getMinutes();
+        var time = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
+        // Displaying the results
         document.getElementById("goa_confirmed").innerHTML=+json.data['0'].confirmed;
         document.getElementById("goa_suspects").innerHTML=+json.data['0'].suspects;
         document.getElementById("goa_deceased").innerHTML=+ json.data['0'].deceased;
-        document.getElementById("goa_recovered").innerHTML=+ json.data['0'].active;
-
+        document.getElementById("goa_recovered").innerHTML=+ json.data['0'].recovered;
+        document.getElementById("update_status").innerHTML="LAST UPDATED AT: "+time;
     })
