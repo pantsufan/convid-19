@@ -5,4 +5,4 @@ Using this website one can get latest updates about COVID-19 in Goa as well as o
 
 ## Thanks To:
 - https://www.covid19india.org/ (For API)
-- https://github.com/rish15 (For Goa API)
+- https://covid-goa.herokuapp.com/goa-cases (For Goa API)
