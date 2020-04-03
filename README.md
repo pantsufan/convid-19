@@ -1,4 +1,4 @@
-# CONVID-19 Tracker (Project by Joel Rodrigues & Rishu Srivastav)
+# COVID-19 Tracker (Project by Joel Rodrigues & Rishu Srivastav)
 (Specifically Made For People Of Goa)
 
 Using this website one can get latest updates about COVID-19 in Goa as well as of India 
