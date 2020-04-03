@@ -1,4 +1,4 @@
-# COVID-19 Tracker (Project by Joel Rodrigues & Rishu Srivastav)
+# COVID-19 Tracker
 (Specifically Made For People Of Goa)
 
 Using this website one can get latest updates about COVID-19 in Goa as well as of India 
@@ -8,6 +8,7 @@ Using this website one can get latest updates about COVID-19 in Goa as well as o
 - https://covid-goa.herokuapp.com/goa-cases (For Goa API)
 
 ## Built by
-- Joel Rodrigues (frontend)
-- Rishu Srivastav (backend)
-- Deepak Yadav (resources)
+- Joel Rodrigues (Frontend)
+- Rishu Srivastav (Backend)
+- Deepak Yadav (Resources)
+
