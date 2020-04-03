@@ -6,3 +6,8 @@ Using this website one can get latest updates about COVID-19 in Goa as well as o
 ## Thanks To:
 - https://www.covid19india.org/ (For API)
 - https://covid-goa.herokuapp.com/goa-cases (For Goa API)
+
+## Built by
+- Joel Rodrigues (frontend)
+- Rishu Srivastav (backend)
+- Deepak Yadav (resources)
